@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Beauty_Player
+
+  Created by Aaron on 2017/2/19.
+  Copyright © 2017年 Aaron. All rights reserved.
+*/
+
+
+CFBundleDisplayName = "Yuki Player";
+UTTypeDescription = "Open by Beauty Player";

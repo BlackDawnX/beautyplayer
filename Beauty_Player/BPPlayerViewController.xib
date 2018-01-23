@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BPPlayerViewController" customModule="Beauty_Player" customModuleProvider="target">
+            <connections>
+                <outlet property="brightnessControllerView" destination="EsD-ca-muU" id="jV3-dR-QN3"/>
+                <outlet property="playButton" destination="n50-ah-8ow" id="ELP-KP-0fH"/>
+                <outlet property="progressSlider" destination="2dq-rw-7U7" id="Trw-9P-jSk"/>
+                <outlet property="systemVolumControllerView" destination="d2f-Zm-HvK" id="KMR-rN-4TP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp8-Uw-meS">
+                    <rect key="frame" x="20" y="20" width="34" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gP6-qh-b0i"/>
+                        <constraint firstAttribute="width" constant="34" id="kzW-R7-VKp"/>
+                    </constraints>
+                    <state key="normal" title="Back" image="backButton.png"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="MUR-43-5OG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n50-ah-8ow">
+                    <rect key="frame" x="669" y="188" width="41" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Zo1-us-RMb"/>
+                        <constraint firstAttribute="width" constant="41" id="siN-wn-4BQ"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="pauseButton.png"/>
+                    <connections>
+                        <action selector="playOrPause:" destination="-1" eventType="touchUpInside" id="viH-Wo-2G8"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-rw-7U7">
+                    <rect key="frame" x="104" y="374" width="527" height="31"/>
+                    <connections>
+                        <action selector="progressSliderChanged:" destination="-1" eventType="valueChanged" id="eff-ut-jjN"/>
+                    </connections>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsD-ca-muU">
+                    <rect key="frame" x="-61" y="160" width="190" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="6ph-74-UhP"/>
+                        <constraint firstAttribute="height" constant="36" id="aFk-4n-XkD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-Zm-HvK">
+                    <rect key="frame" x="-17" y="160" width="190" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Uo6-Jq-OMe"/>
+                        <constraint firstAttribute="width" constant="190" id="Xzx-vh-CyB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yp8-Uw-meS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="53l-Lo-qHK"/>
+                <constraint firstAttribute="trailing" secondItem="n50-ah-8ow" secondAttribute="trailing" constant="26" id="8Sx-yB-7Qj"/>
+                <constraint firstItem="d2f-Zm-HvK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-29" id="9dZ-LA-4Yr"/>
+                <constraint firstAttribute="bottom" secondItem="2dq-rw-7U7" secondAttribute="bottom" constant="10" id="JWe-pN-k6d"/>
+                <constraint firstItem="d2f-Zm-HvK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-17" id="jDQ-Y5-Ya0"/>
+                <constraint firstItem="EsD-ca-muU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-29" id="qAD-Vr-prC"/>
+                <constraint firstAttribute="trailing" secondItem="2dq-rw-7U7" secondAttribute="trailing" constant="107" id="sdy-eE-si9"/>
+                <constraint firstItem="Yp8-Uw-meS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="t8K-YA-yoH"/>
+                <constraint firstItem="n50-ah-8ow" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tgT-9t-tz4"/>
+                <constraint firstItem="2dq-rw-7U7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="106" id="xQj-Jf-vxH"/>
+                <constraint firstItem="EsD-ca-muU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-61" id="zCb-Aw-VTV"/>
+            </constraints>
+            <point key="canvasLocation" x="35" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backButton.png" width="100" height="100"/>
+        <image name="pauseButton.png" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,28 @@
+body {
+	margin: 0 0;	
+	font-family: 微软雅黑;
+	font-size: 15px;
+	word-wrap: break-word;
+	word-break: normal;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.usual {
+	width: 100%;
+	
+	margin: 0 auto;
+}
+
+.mainDiv {
+	width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+}
+
+.iconImg {
+	width: 50%;
+	/*height: 50%;*/
+	text-align: center;
+	display: flex;
+}

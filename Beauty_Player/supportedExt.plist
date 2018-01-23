@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>rmvb</string>
+	<string>xvid</string>
+	<string>vp6</string>
+	<string>avi</string>
+	<string>mov</string>
+	<string>mkv</string>
+	<string>flv</string>
+	<string>3gp</string>
+	<string>3g2</string>
+	<string>asf</string>
+	<string>wmv</string>
+	<string>mp4</string>
+	<string>m4v</string>
+	<string>tp</string>
+	<string>ts</string>
+	<string>mtp</string>
+	<string>m2t</string>
+</array>
+</plist>

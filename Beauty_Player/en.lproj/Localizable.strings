@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Beauty_Player
+
+  Created by Aaron on 2017/2/19.
+  Copyright © 2017年 Aaron. All rights reserved.
+*/
+
+"unknown-size" = "Unknown size";
+
+"UrlHere" = "URL Here";
+
+"LinkToServer" = "Network Resources";
